@@ -1,0 +1,527 @@
+{
+  "contractName": "Address",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"Utility library of inline functions on addresses\"}},\"settings\":{\"compilationTarget\":{\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/utils/Address.sol\":\"Address\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/utils/Address.sol\":{\"keccak256\":\"0xbb25b5d5bd74ba48ce8d67e3b8d053458ee539449774aee5487b15c409910b38\",\"urls\":[\"bzz-raw://0a23176d9d6a3e3f2ed2eb139e9d8523e6febd3aa9f52abfba7a41f35ddeb1e9\",\"dweb:/ipfs/QmPcCjNBwksYmpbb68Cf3QYuc38ivLSEzR6VyCvZyS2Chi\"]}},\"version\":1}",
+  "bytecode": "0x60556023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a72315820ffb47f51d1e742129cbb3c5e208d6e87d3aac0cf28cc3ea7502a9654893dd0ce64736f6c634300050c0032",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a72315820ffb47f51d1e742129cbb3c5e208d6e87d3aac0cf28cc3ea7502a9654893dd0ce64736f6c634300050c0032",
+  "sourceMap": "99:1016:18:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "99:1016:18:-;;;;;;;;",
+  "source": "pragma solidity >=0.4.21 <0.6.0;\r\n\r\n/**\r\n * Utility library of inline functions on addresses\r\n */\r\nlibrary Address {\r\n    /**\r\n     * Returns whether the target address is a contract\r\n     * @dev This function will return false if invoked during the constructor of a contract,\r\n     * as the code is not actually created until after the constructor finishes.\r\n     * @param account address of the account to check\r\n     * @return whether the target address is a contract\r\n     */\r\n    function isContract(address account) internal view returns (bool) {\r\n        uint256 size;\r\n        // XXX Currently there is no better way to check if there is a contract in an address\r\n        // than to check the size of the code at that address.\r\n        // See https://ethereum.stackexchange.com/a/14016/36603\r\n        // for more details about how this works.\r\n        // TODO Check this again before the Serenity release, because all addresses will be\r\n        // contracts then.\r\n        // solhint-disable-next-line no-inline-assembly\r\n        assembly { size := extcodesize(account) }\r\n        return size > 0;\r\n    }\r\n}",
+  "sourcePath": "C:\\Users\\Pierre ROUBIOL\\Desktop\\ESILV\\A5_S9\\Monnaie Numérique\\Ranch\\Ranch\\utils\\Address.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Numérique/Ranch/Ranch/utils/Address.sol",
+    "exportedSymbols": {
+      "Address": [
+        2486
+      ]
+    },
+    "id": 2487,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2469,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:18"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": "Utility library of inline functions on addresses",
+        "fullyImplemented": true,
+        "id": 2486,
+        "linearizedBaseContracts": [
+          2486
+        ],
+        "name": "Address",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 2484,
+              "nodeType": "Block",
+              "src": "551:561:18",
+              "statements": [
+                {
+                  "assignments": [
+                    2477
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 2477,
+                      "name": "size",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 2484,
+                      "src": "562:12:18",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 2476,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "562:7:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 2478,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "562:12:18"
+                },
+                {
+                  "externalReferences": [
+                    {
+                      "size": {
+                        "declaration": 2477,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1049:4:18",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "account": {
+                        "declaration": 2471,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1069:7:18",
+                        "valueSize": 1
+                      }
+                    }
+                  ],
+                  "id": 2479,
+                  "nodeType": "InlineAssembly",
+                  "operations": "{ size := extcodesize(account) }",
+                  "src": "1038:41:18"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 2482,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 2480,
+                      "name": "size",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2477,
+                      "src": "1096:4:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 2481,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1103:1:18",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1096:8:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 2475,
+                  "id": 2483,
+                  "nodeType": "Return",
+                  "src": "1089:15:18"
+                }
+              ]
+            },
+            "documentation": "Returns whether the target address is a contract\n@dev This function will return false if invoked during the constructor of a contract,\nas the code is not actually created until after the constructor finishes.\n@param account address of the account to check\n@return whether the target address is a contract",
+            "id": 2485,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2472,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2471,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2485,
+                  "src": "505:15:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2470,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "505:7:18",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "504:17:18"
+            },
+            "returnParameters": {
+              "id": 2475,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2474,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2485,
+                  "src": "545:4:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2473,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "545:4:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "544:6:18"
+            },
+            "scope": 2486,
+            "src": "485:627:18",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2487,
+        "src": "99:1016:18"
+      }
+    ],
+    "src": "0:1115:18"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Numérique/Ranch/Ranch/utils/Address.sol",
+    "exportedSymbols": {
+      "Address": [
+        2486
+      ]
+    },
+    "id": 2487,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2469,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:18"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": "Utility library of inline functions on addresses",
+        "fullyImplemented": true,
+        "id": 2486,
+        "linearizedBaseContracts": [
+          2486
+        ],
+        "name": "Address",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 2484,
+              "nodeType": "Block",
+              "src": "551:561:18",
+              "statements": [
+                {
+                  "assignments": [
+                    2477
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 2477,
+                      "name": "size",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 2484,
+                      "src": "562:12:18",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 2476,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "562:7:18",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 2478,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "562:12:18"
+                },
+                {
+                  "externalReferences": [
+                    {
+                      "size": {
+                        "declaration": 2477,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1049:4:18",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "account": {
+                        "declaration": 2471,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1069:7:18",
+                        "valueSize": 1
+                      }
+                    }
+                  ],
+                  "id": 2479,
+                  "nodeType": "InlineAssembly",
+                  "operations": "{ size := extcodesize(account) }",
+                  "src": "1038:41:18"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 2482,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 2480,
+                      "name": "size",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2477,
+                      "src": "1096:4:18",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 2481,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1103:1:18",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1096:8:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 2475,
+                  "id": 2483,
+                  "nodeType": "Return",
+                  "src": "1089:15:18"
+                }
+              ]
+            },
+            "documentation": "Returns whether the target address is a contract\n@dev This function will return false if invoked during the constructor of a contract,\nas the code is not actually created until after the constructor finishes.\n@param account address of the account to check\n@return whether the target address is a contract",
+            "id": 2485,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2472,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2471,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2485,
+                  "src": "505:15:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2470,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "505:7:18",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "504:17:18"
+            },
+            "returnParameters": {
+              "id": 2475,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2474,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2485,
+                  "src": "545:4:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2473,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "545:4:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "544:6:18"
+            },
+            "scope": 2486,
+            "src": "485:627:18",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2487,
+        "src": "99:1016:18"
+      }
+    ],
+    "src": "0:1115:18"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-27T10:05:00.277Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {},
+    "notice": "Utility library of inline functions on addresses"
+  }
+}

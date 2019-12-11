@@ -1,0 +1,154 @@
+{
+  "contractName": "Contrat",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/contracts/Contrat.sol\":\"Contrat\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/contracts/Contrat.sol\":{\"keccak256\":\"0xde6bbb6553c58aae3eaf0e1680a4d8d97c57005d45db1df3cb4f5028dc9313db\",\"urls\":[\"bzz-raw://3a2eda7d3651acb0e05cb30e8e7bca0840102627501abf52857aeb25b11390e0\",\"dweb:/ipfs/Qmcy2mdYgc9DDHdt9btentggfuBznzTBKYWpPdrgAZ28B2\"]},\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/contracts/ERC721.sol\":{\"keccak256\":\"0x06a3a2aaa8918752f917b38b58afca124a91a1e41e54ef653ed4ba19f8e8ff1c\",\"urls\":[\"bzz-raw://3f79f08db6cea62e08d20af53c98d76d5df612b82e95d8748239bac8c31963ad\",\"dweb:/ipfs/Qmc5X9pqggfqWvzBg4EvXNxkcizP4GyyCybP9ZEZNjFEGd\"]},\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/contracts/IERC721.sol\":{\"keccak256\":\"0x0d1ce42bb76614116bc7f12e22dbae87b9e0a453f2379be8d40e52eb180034f7\",\"urls\":[\"bzz-raw://b1fe86b10dda351061bad891e4a59f8c3cb8471c2bb3d5fe18926cd386871ed7\",\"dweb:/ipfs/QmeZijhgh2jcmVW5HubBBNHDbmKFELh5ceQoc8FP57bhpN\"]},\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/contracts/IERC721Receiver.sol\":{\"keccak256\":\"0xd98c093f88d8bdf455027f87b9c3e34231a74b1d8d16e642f7a49717a2628ba8\",\"urls\":[\"bzz-raw://fdb83d18c5aec377541ad978a34f0bb7961f9f485e03f6709a2ac43f968ac96e\",\"dweb:/ipfs/QmVsJdoQjMefsj5Jt2h4sGnZbgHDTCuJfrJYimJL8PYtKN\"]},\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/contracts/Ranch.sol\":{\"keccak256\":\"0x238fef42837b69388cd5b544e762c9d145a132a9a00ee95de0dc5495086fdfd6\",\"urls\":[\"bzz-raw://f8252b32fe628df352be0020aa9a854e76fe473196b1544b7f9700f8939856c1\",\"dweb:/ipfs/QmWUWA6NVsvQzxLqBmEpQfU4XpicB8bj8TBTo3jJ9okHPG\"]},\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/drafts/Counters.sol\":{\"keccak256\":\"0x1c07e1f2cd3eaa9a72a47f67e930fa104f8751cdfc3a32af79b7e1157416bfde\",\"urls\":[\"bzz-raw://b95d0d54315a145ec34c0df018606728bdd5c31faa4169ae44dfe1bf92466215\",\"dweb:/ipfs/QmbZ2UPpuz9kvdmzes4FUC9Vk3f4LQx9tZFyJ17xRZfVLd\"]},\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/introspection/ERC165.sol\":{\"keccak256\":\"0x1ce9156172ffb9fbe021c0e5ade787e5384d3082cec08a094312b89c94804f9b\",\"urls\":[\"bzz-raw://f9fd8d7c6b95219861e1bd16496e61055112ae24269c51d849fb81e28ef8a1e6\",\"dweb:/ipfs/QmdW3SqeSvZbiqB1vd1etgCH9onpF9f6kEYgNDDQJoXXgU\"]},\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/introspection/IERC165.sol\":{\"keccak256\":\"0x815557397dc51c2faea65120c5025952dbdd308a9460f00d3d660d4dcc9e1259\",\"urls\":[\"bzz-raw://f71e0a8037f394ca2f5410d2ed43ab00c7c724a8f340d666a25112ba8fc426bd\",\"dweb:/ipfs/Qma4ejtpCJX3VjkrAQexMPeos8gpHAop6TW4XxG9sLy2ZJ\"]},\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/math/SafeMath.sol\":{\"keccak256\":\"0x16ccc0917e94fc7e77a18dbaa73b5e1e7ae65de56d9380ff34b4ab65b0efa088\",\"urls\":[\"bzz-raw://993c0543a3850c5f55b47a9766220ffa4e6c94c2f6e56192aaba23b1c660555a\",\"dweb:/ipfs/QmaEGuc5ZihgsXYm4VZnMFF1bEaVCaDWsapk6yQJifZprQ\"]},\"/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Num\\u00e9rique/Ranch/Ranch/utils/Address.sol\":{\"keccak256\":\"0xbb25b5d5bd74ba48ce8d67e3b8d053458ee539449774aee5487b15c409910b38\",\"urls\":[\"bzz-raw://0a23176d9d6a3e3f2ed2eb139e9d8523e6febd3aa9f52abfba7a41f35ddeb1e9\",\"dweb:/ipfs/QmPcCjNBwksYmpbb68Cf3QYuc38ivLSEzR6VyCvZyS2Chi\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a723158204ce1633a85d7db138e4152611966c13b478bdb1cbb9bb1bdf843a93f873745ae64736f6c634300050c0032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a723158204ce1633a85d7db138e4152611966c13b478bdb1cbb9bb1bdf843a93f873745ae64736f6c634300050c0032",
+  "sourceMap": "84:23:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:23:0;;;;;;;",
+  "deployedSourceMap": "84:23:0:-;;;;;",
+  "source": "pragma solidity >=0.4.21 <0.6.0;\r\n\r\nimport \"./Ranch.sol\";\r\nimport\"./ERC721.sol\";\r\n\r\ncontract Contrat {\r\n\r\n}\r\n\r\n\r\n\r\n\r\n/*contract Contrat is Ranch {\r\n\r\n    struct Acheteur {\r\n        address utilisateur;\r\n        string name;\r\n        uint256 money;\r\n        uint[] possession;\r\n    }\r\n\r\n    Acheteur[] public Acheteurs;\r\n    event declaredAcheteur(uint acheteurNumber);\r\n\r\n    function declareAcheteur(string memory _name, uint256 _money, uint[] memory _possession) public {\r\n        Acheteur memory _Acheteur;\r\n        _Acheteur.utilisateur=msg.sender;\r\n        _Acheteur.name=_name;\r\n        _Acheteur.money=_money;\r\n        _Acheteur.possession=_possession;\r\n        Acheteurs.push(_Acheteur) -1;\r\n        uint acheteurNumber=Acheteurs.lenght-1;\r\n        emit declaredAcheteur(acheteurNumber);\r\n    }\r\n\r\n    function buyAnimal(uint objectNumber, uint acheteurNumber, address from, address to ) public {\r\n        require(isInRegister(to));\r\n        \r\n    }\r\n\r\n} */",
+  "sourcePath": "C:/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Numérique/Ranch/Ranch/contracts/Contrat.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Numérique/Ranch/Ranch/contracts/Contrat.sol",
+    "exportedSymbols": {
+      "Contrat": [
+        4
+      ]
+    },
+    "id": 5,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "absolutePath": "/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Numérique/Ranch/Ranch/contracts/Ranch.sol",
+        "file": "./Ranch.sol",
+        "id": 2,
+        "nodeType": "ImportDirective",
+        "scope": 5,
+        "sourceUnit": 1020,
+        "src": "36:21:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Numérique/Ranch/Ranch/contracts/ERC721.sol",
+        "file": "./ERC721.sol",
+        "id": 3,
+        "nodeType": "ImportDirective",
+        "scope": 5,
+        "sourceUnit": 550,
+        "src": "59:21:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 4,
+        "linearizedBaseContracts": [
+          4
+        ],
+        "name": "Contrat",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 5,
+        "src": "84:23:0"
+      }
+    ],
+    "src": "0:965:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Numérique/Ranch/Ranch/contracts/Contrat.sol",
+    "exportedSymbols": {
+      "Contrat": [
+        4
+      ]
+    },
+    "id": 5,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "absolutePath": "/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Numérique/Ranch/Ranch/contracts/Ranch.sol",
+        "file": "./Ranch.sol",
+        "id": 2,
+        "nodeType": "ImportDirective",
+        "scope": 5,
+        "sourceUnit": 1020,
+        "src": "36:21:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Pierre ROUBIOL/Desktop/ESILV/A5_S9/Monnaie Numérique/Ranch/Ranch/contracts/ERC721.sol",
+        "file": "./ERC721.sol",
+        "id": 3,
+        "nodeType": "ImportDirective",
+        "scope": 5,
+        "sourceUnit": 550,
+        "src": "59:21:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 4,
+        "linearizedBaseContracts": [
+          4
+        ],
+        "name": "Contrat",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 5,
+        "src": "84:23:0"
+      }
+    ],
+    "src": "0:965:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-27T11:29:48.434Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
